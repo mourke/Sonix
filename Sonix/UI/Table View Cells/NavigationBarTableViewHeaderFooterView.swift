@@ -86,7 +86,7 @@ class NavigationBarTableViewHeaderFooterView: UITableViewHeaderFooterView {
     
     private func updateUserImage() {
         let width: CGFloat = traitCollection.horizontalSizeClass == .compact ? 36 : 43
-        accountButton?.setImage(Settings.image.scaled(to: CGSize(width: width, height: width)).withCornerRadius(width/2).withRenderingMode(.alwaysOriginal), for: .normal)
+        accountButton?.setImage(Settings.image?.scaled(to: CGSize(width: width, height: width)).withCornerRadius(width/2).withRenderingMode(.alwaysOriginal), for: .normal)
     }
     
     @objc func updateDateLabel() {

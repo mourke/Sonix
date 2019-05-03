@@ -60,8 +60,10 @@ class AccountTableViewController: UITableViewController {
         case 0:
             cell.textLabel?.text = Settings.name
             cell.detailTextLabel?.text = Settings.username
-            cell.imageView?.image = Settings.image
-            cell.imageView?.layer.cornerRadius = Settings.image.size.width/2
+            if let image = Settings.image {
+                cell.imageView?.image = image
+                cell.imageView?.layer.cornerRadius = image.size.width/2
+            }
             cell.imageView?.layer.masksToBounds = true
         case 1:
             switch indexPath.row {

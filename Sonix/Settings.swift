@@ -75,13 +75,13 @@ struct Settings {
         }
     }
     
-    static var image: UIImage {
+    static var image: UIImage? {
         get {
-            let data = UserDefaults.standard.data(forKey: "traktProfileImage")!
+            guard let data = UserDefaults.standard.data(forKey: "traktProfileImage") else { return nil }
             let image = UIImage(data: data)!
             return image.scaled(to: CGSize(width: 68, height: 68))
         } set {
-            let data = newValue.pngData()!
+            let data = newValue!.pngData()!
             UserDefaults.standard.set(data, forKey: "traktProfileImage")
         }
     }

@@ -58,7 +58,7 @@ class InfoDetailViewController: UIViewController, UICollectionViewDataSource, UI
         TraktManager.sharedManager.getPlaybackProgress(type: .movies) { [unowned self] (result) in
             switch result {
             case .success(let result):
-                guard let progress = result.first(where: {$0.movie?.ids.tmdb == self.mediaItem.id}) else { return }
+                guard let progress = result.first(where: {$0.movie?.ids.tmdb == self.mediaItem?.id}) else { return }
                 OperationQueue.main.addOperation {
                     UIView.animate(withDuration: 0.85) {
                         self.progressView?.value = CGFloat(progress.progress)

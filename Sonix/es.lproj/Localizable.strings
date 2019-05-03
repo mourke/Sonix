@@ -1,0 +1,248 @@
+/* Tells the user a new version of Sonix is available. */
+"update_manager_update_alert_title" = "Actualización Disponible";
+
+/* Tells the user that there are no new versions of Sonix available. */
+"update_manager_no_update_alert_title" = "No Hay Actualizaciones";
+
+/* Format for update alert: A new version of Sonix ({Version string. E.g. '1.0.0'}) is now available. */
+"update_manager_update_alert_message_format" = "Una nueva versión de Sonix (%@) ya está disponible.";
+
+/* Tells the user that that there are no updates available for the app. */
+"update_manager_no_update_alert_message" = "No hay actualizaciones disponibles para Sonix ahora mismo.";
+
+/* The user understands what they have read. */
+"ui_alert_action_ok" = "OK";
+
+/* The user wants to cancel an action they previously initiated. */
+"ui_alert_action_cancel" = "Cancelar";
+
+/* The user understands what they have read and wants to skip the current version. */
+"update_manager_update_alert_action_skip" = "Saltar Esta Versión";
+
+/* Allows the user to see more of the current truncated list. */
+"collection_view_section_header_button_title" = "Ver Todo";
+
+/* Allows the user to see the rest of the text in a truncated text view. */
+"ui_expandable_text_view_more" = "Más";
+
+/* A list of movies that have a lot of people currently watching. */
+"trending_movies_label" = "Películas populares";
+
+/* A list of shows that have a lot of people currently watching. */
+"trending_shows_label" = "Programas de TV populares";
+
+/* A list of cast & crew members from movies that are currently popular. */
+"trending_people_label" = "Personas populares";
+
+/* No matching items were found for the search query. */
+"search_results_empty_title" = "Sin resultados";
+
+/* Format for no results description: We didn't turn anything up for {The user's search query}. Try something else. */
+"search_results_empty_description_format" = "No se encontraron resultados para %@. Prueba con palabras diferentes.";
+
+/* All the possible things the user can search for. */
+"search_bar_placeholder_text" = "Buscar Películas, Series y Personas";
+
+/* The user would like for this feature to be enabled. */
+"settings_cell_yes_label" = "Sí";
+
+/* The user would not like for this feature to be enabled. */
+"settings_cell_no_label" = "No";
+
+/* This feature is currently enabled. */
+"settings_cell_on_label" = "Activado";
+
+/* This feature is currently disabled. */
+"settings_cell_off_label" = "Desactivado";
+
+/* The user has never checked for updates. */
+"settings_cell_never_label" = "Nunca";
+
+/* The user doesn't mind what value this setting has. */
+"settings_cell_any_label" = "Cualquiera";
+
+/* The user has been displayed with a list of options, but has chosen none of them. */
+"settings_cell_none_label" = "Ninguno";
+
+/* The user doesn't care the value of the setting and would like the system to decide for them. */
+"settings_cell_automatic_label" = "Automático";
+
+/* The user would like a light appearance for the app's user interface. */
+"settings_cell_light_label" = "Claro";
+
+/* The user would like a dark appearance for the app's user interface. */
+"settings_cell_dark_label" = "Oscuro";
+
+/* The title of the sign-out alert. */
+"settings_sign_out_alert_action_title" = "Cerrar sesión";
+
+/* Asks the user if they are sure they would like to sign out of the application. */
+"settings_sign_out_confirmation_message" = "¿Seguro que deseas cerrar sesión?";
+
+/* The title of the button asking the user if they would like to sign out of the application. */
+"settings_sign_out_alert_action_title" = "Cerrar sesión";
+
+/* Format for onboarding welcome title: Welcome to {App's Name}. */
+"welcome_onboarding_title_label_format" = "Bienvenidos \n a %@";
+
+/* Format for onboarding connect title: Connect to {Service's Name}. */
+"connect_onboarding_title_label_format" = "Connectar \n a %@";
+
+/* The title of the button allowing the user to proceed with set-up. */
+"welcome_onboarding_button_title_label" = "Continuar";
+
+/* The title of the button allowing the user to connect to one of Sonix's services, e.g. Trakt or Put.io. */
+"connect_onboarding_button_title_label" = "Connectar";
+
+/* The title describing Sonix's quick downloads. */
+"welcome_onboarding_speed_title_label" = "Descargados muy rápidos";
+
+/* A more detailed description of Sonix's quick downloads. */
+"welcome_onboarding_speed_description_label" = "Debido a Put.io, descargando torrents nunca ha sido tan rapido.";
+
+/* The title describing Sonix's recommendations. */
+"welcome_onboarding_recommendations_title_label" = "Recomendaciónes";
+
+/* A more detailed description of Sonix's recommendations. */
+"welcome_onboarding_recommendations_description_label" = "Las recomendaciónes se escoge meticulosamente por Trakt.tv para ti.";
+
+/* The title describing Sonix's cinema-time capabilities. */
+"welcome_onboarding_times_title_label" = "Horarios del cine";
+
+/* A more detailed description of Sonix's cinema-time capabilities. */
+"welcome_onboarding_times_description_label" = "Horarios de tu cine local están incorporados para que nunca faltes a una nueva película.";
+
+/* The title describing Sonix's Trakt integrations. */
+"trakt_onboarding_title_label" = "Hacer un seguimiento de lo que veas automáticamente";
+
+/* A more detailed description of Sonix's Trakt integrations. */
+"trakt_onboarding_description_label" = "Trakt.tv nos ayuda a darte recomendaciónes a medida, controlar todo lo que has visto y mucho más.";
+
+/* The title describing Sonix's Put.io integrations. */
+"put_io_onboarding_title_label" = "El servicio de almacenamiento en nube que tiene una cierta gravedad";
+
+/* A more detailed description of Sonix's Put.io integrations. */
+"put_io_onboarding_description_label" = "Put.io ayuda a accelerar descargas mediante su \"digital stash technology\".";
+
+/* Tells the user that there has been an error signing in. */
+"trakt_error_alert_title" = "No pudimos iniciar tu sesión";
+
+/* Tells the user there has been an unknown problem and the only solution is to try again. */
+"trakt_error_alert_message" = "Hubo un problema y no pudimos conectar con Trakt. Inténtalo de nuevo más tarde";
+
+/* Presents the user with a list of movies and or episodes that they are in the middle of watching or the next unwatched episode in a series they are watching. */
+"home_up_next_title" = "A continuación";
+
+/* Presents the user with the list of movies/shows they have previously created with the intention of watching at a later date. */
+"home_watchlist_title" = "Ver más tarde";
+
+/* Presents the user with a list of movies/shows based upon their previous watch history. */
+"home_recommended_title" = "Recomendaciones";
+
+/* Presents the user with a list of the episodes/movies their friends are currently watching. */
+"home_social_feed_title" = "Tus amigos están viendo";
+
+/* Presents the user with similar movies/shows based upon a movie/show they have previously watched. This is different from recommended because the items are not specifically tailored to them. */
+"home_similar_title_format" = "Debido a que viste '%@'";
+
+/* Presents the user with a list of movies/shows they have previously watched and may want to watch again. */
+"home_history_title" = "¡Que las veas otra vez!";
+
+/* Presents the user with a list of movies that are currently showing in their local cinema. */
+"home_local_movies_title" = "En los cines cercanos";
+
+/* Format for a label detailing a show's season and episode number: Season {Number of season} • Episode {Number of episode}. */
+"season_episode_label_title_format" = "Temporada %1$d • Episodio %2$d";
+
+/* Shorthand for the format of a label detailing a show's season and episode number: S{Number of season} E{Number of episode}. */
+"season_episode_label_title_short_format" = "T%1$d E%2$d";
+
+/* Format for the padding for the flixster review section: Average of {Localized string of number of persons. E.g. '242'} ratings and reviews by users of Flixster. */
+"flixster_review_filler_format" = "Promedio de %@ valoraciones y reseñas de usarios de Flixster.";
+
+/* Presents the user with a list of movie genres. */
+"browse_genre_title_movie" = "Cinematográficos";
+
+/* Presents the user with a list of show genres. */
+"browse_genre_title_show" = "Televisivos";
+
+/* Presents the user with a list of movies that were recently made available. */
+"browse_recently_added_title" = "Añadidas recientemente";
+
+/* Presents the user with a list of movies/shows that have not yet come out, but for which people are keenly waiting. */
+"browse_anticipated_title" = "Más esperados";
+
+/* Presents the user with a list of movie/show genres. */
+"browse_genres_title" = "Géneros";
+
+/* The user wants to add this movie/show to a list of movies/shows to be watched later. */
+"row_alert_action_add_watchlist_title" = "Añadir a ver más tarde";
+
+/* The user wants to remove this movie/show from a list of movies/shows to be watched later. */
+"row_alert_action_remove_watchlist_title" = "Quitar de ver más tarde";
+
+/* The user has previously seen this movie/episode. */
+"row_alert_action_add_history_title" = "Marcar como visto";
+
+/* The user has previously seen this show/season and would like to mark all episodes in the season/show as watched. */
+"row_alert_action_add_multiple_history_title" = "Marcar episodios como vistos";
+
+/* The user mistakenly thought that they had seen this movie/episode when they actually hadn't and would like to correct this mistake. */
+"row_alert_action_remove_history_title" = "Marcar como no visto";
+
+/* The user mistakenly thought that they had seen this show/season when they actually hadn't and would like to correct this mistake. */
+"row_alert_action_remove_multiple_history_title" = "Marcar episodios como vistos";
+
+/* The user wants to clear their playback progress (make it as though they hadn't seen it before) for a specific episode/movie. */
+"row_alert_action_remove_progress_title" = "Borrar del historial de reproducciones";
+
+/* The user does not want Sonix to track their progress watching this show any longer. They may continue watching this show but as far as Sonix is concerned, they are no longer watching it. */
+"row_alert_action_stop_tracking_title" = "Dejar de hacer un seguimiento de mi historial de reproducciones para este programa";
+
+/* The user likes what they've read so far and want to play the movie/show. */
+"random_item_alert_action_play_title" = "Reproducir";
+
+/* The user does not want to watch the randomly selected movie/show and would like to be suggested another. */
+"random_item_alert_action_roll_again_title" = "Tirar otra vez";
+
+/* Presents the user with a list of videos such as: behind the scenes, bloopers and deleted scenes for a given movie/show. */
+"detail_extras_title" = "Extras";
+
+/* Presents the user with a list of movies/shows that are similar to another movie/show. */
+"detail_related_title" = "Relacionado";
+
+/* Presents the user with a list of reviews for the movie/show. */
+"detail_reviews_title" = "Valoraciones y reseñas";
+
+/* Presents the user with a list of people who worked on the movie/show during its production. */
+"detail_people_title" = "Reparto y equipo";
+
+/* Presents the user with a list of movies in which an actor starred. */
+"detail_movies" = "Películas";
+
+/* Presents the user with a list of movies in which an actor interpreted a role. */
+"detail_tv_shows" = "Programas";
+
+/* The user wants to see all the seasons that the show contains. */
+"detail_more_seasons_button_title" = "Más temporadas";
+
+/* The people who worked on only this episode and do not usually appear in the rest of the show. */
+"detail_guest_stars_title" = "Estrellas invitadas";
+
+/* The episodes in which the person has appeared as an extra but not as a returning, regular cast member. */
+"detail_person_guest_appearances" = "Artistas invitados";
+
+/* The format string for the date and location of a person: Born {Date of birth e.g. 21st June 1999} in {Place of birth e.g. Virginia, Minnesota}. */
+"detail_person_date_and_place_of_birth_format" = "Nació %1$@ en %2$@.";
+
+/* The person who created the show. */
+"show_creator" = "Creador";
+
+/* Format for displaying movie showtimes: Showing at {Localized string of the cinema showings. E.g. '3:30 PM, 9:15 PM'} */
+"cinema_times_format" = "Cartelera: %@.";
+
+/* The episode never ended up airing. */
+"episode_not_aired_title" = "No transmitido";
+
+/* Format for the number of seeds and peers associated with a torrent: SEEDS: {The number of people who have completely finished downloading the torrent and are currently uploading it. E.g. 2121} • PEERS: {The number of people currently downloading the torrent. E.g. 599}. */
+"torrent_seeds_peers_format" = "Seeds: %1$d • Peers: %2$d";

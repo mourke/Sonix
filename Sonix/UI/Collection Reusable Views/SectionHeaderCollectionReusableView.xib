@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="U6b-Vx-4bR" customClass="SectionHeaderCollectionReusableView" customModule="Sonix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKe-Xl-V4S">
+                    <rect key="frame" x="0.0" y="5" width="150" height="25"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <color key="textColor" name="labelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLU-dS-X52">
+                    <rect key="frame" x="158" y="7.5" width="72" height="20"/>
+                    <color key="backgroundColor" name="foregroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="1" id="tfb-Ve-iyZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="15" minY="2" maxX="15" maxY="2"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kKe-Xl-V4S" secondAttribute="bottom" id="0aj-fa-YgJ"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XLU-dS-X52" secondAttribute="bottom" id="3Ug-vy-2qc"/>
+                <constraint firstItem="XLU-dS-X52" firstAttribute="top" relation="greaterThanOrEqual" secondItem="U6b-Vx-4bR" secondAttribute="top" id="3Un-gi-ffX"/>
+                <constraint firstItem="kKe-Xl-V4S" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="BCK-Eq-0gi"/>
+                <constraint firstAttribute="trailing" secondItem="XLU-dS-X52" secondAttribute="trailing" id="GtN-qQ-K5H"/>
+                <constraint firstItem="XLU-dS-X52" firstAttribute="centerY" secondItem="kKe-Xl-V4S" secondAttribute="centerY" id="HSL-yn-itP"/>
+                <constraint firstItem="XLU-dS-X52" firstAttribute="leading" secondItem="kKe-Xl-V4S" secondAttribute="trailing" priority="999" constant="8" symbolic="YES" id="jSt-cw-rq7"/>
+                <constraint firstItem="kKe-Xl-V4S" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" priority="999" constant="5" id="z6d-sx-1GF"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="XLU-dS-X52" id="OYB-6Z-Rm3"/>
+                <outlet property="textLabel" destination="kKe-Xl-V4S" id="PRr-be-QBw"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="foregroundColor">
+            <color red="0.94117647058823528" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

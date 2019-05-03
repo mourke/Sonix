@@ -1,0 +1,87 @@
+//
+//  UITraitEnvironment+TraitCollection.m
+//  Sonix
+//
+//  Copyright © 2018 Mark Bourke.
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE
+//
+
+#import <UIKit/UIKit.h>
+#import "objc/runtime.h"
+
+void fixTraitCollection(UITraitCollection **traitCollection) {
+    UIUserInterfaceStyle style = [[NSUserDefaults standardUserDefaults] integerForKey:@"preferredAppearance"];
+    if (style != UIUserInterfaceStyleUnspecified) {
+        UITraitCollection *styleCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:style];
+        *traitCollection = [UITraitCollection traitCollectionWithTraitsFromCollections:@[*traitCollection, styleCollection]];
+    }
+}
+
+void swizzleMethodsOnClass(Class class) {
+    SEL defaultSelector = NSSelectorFromString(@"traitCollection");
+    SEL swizzledSelector = NSSelectorFromString(@"swizzled_traitCollection");
+    
+    Method defaultMethod = class_getInstanceMethod(class, defaultSelector);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+    
+    BOOL isMethodExists = !class_addMethod(class, defaultSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+    
+    if (isMethodExists) {
+        method_exchangeImplementations(defaultMethod, swizzledMethod);
+    } else {
+        class_replaceMethod(class, swizzledSelector, method_getImplementation(defaultMethod), method_getTypeEncoding(defaultMethod));
+    }
+}
+
+@implementation UIView (TraitCollection)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        swizzleMethodsOnClass(class);
+    });
+}
+
+- (UITraitCollection *)swizzled_traitCollection {
+    UITraitCollection *traitCollection = [self swizzled_traitCollection];
+    fixTraitCollection(&traitCollection);
+    return traitCollection;
+}
+
+@end
+
+@implementation UIViewController (TraitCollection)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        swizzleMethodsOnClass(class);
+    });
+}
+
+- (UITraitCollection *)swizzled_traitCollection {
+    UITraitCollection *traitCollection = [self swizzled_traitCollection];
+    fixTraitCollection(&traitCollection);
+    return traitCollection;
+}
+
+@end

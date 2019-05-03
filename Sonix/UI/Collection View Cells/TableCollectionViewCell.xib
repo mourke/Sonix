@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="TableCollectionViewCell" customModule="Sonix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eis-fq-DaO">
+                        <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="500" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-gJ-D42">
+                        <rect key="frame" x="16" y="22" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kvf-gJ-D42" secondAttribute="height" multiplier="1:1" id="Duj-h8-25g"/>
+                            <constraint firstAttribute="width" priority="250" id="XDP-qq-7zT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kn3-kN-kVG">
+                        <rect key="frame" x="31" y="10" width="39.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" name="labelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="cf5-Rq-SJK">
+                        <rect key="frame" x="78.5" y="0.0" width="302.5" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="8" id="nJA-Qi-FGo"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJD-Ec-OU5" userLabel="Separator View">
+                        <rect key="frame" x="15" y="43.5" width="366" height="0.5"/>
+                        <color key="backgroundColor" name="separatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="oku-fK-sEa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="cf5-Rq-SJK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0r3-Qz-Vo6"/>
+                <constraint firstAttribute="trailing" secondItem="cf5-Rq-SJK" secondAttribute="trailing" id="8hG-VK-gqt"/>
+                <constraint firstAttribute="trailing" secondItem="eis-fq-DaO" secondAttribute="trailing" id="C32-cR-CiM"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kvf-gJ-D42" secondAttribute="bottom" id="MKI-em-bd8"/>
+                <constraint firstItem="kvf-gJ-D42" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="Oiv-yO-LXI"/>
+                <constraint firstAttribute="bottom" secondItem="tJD-Ec-OU5" secondAttribute="bottom" id="Q67-3U-CqN"/>
+                <constraint firstItem="Kn3-kN-kVG" firstAttribute="leading" secondItem="kvf-gJ-D42" secondAttribute="trailing" constant="15" id="U6W-tD-kDN"/>
+                <constraint firstAttribute="bottom" secondItem="cf5-Rq-SJK" secondAttribute="bottom" id="Wti-zT-yc7"/>
+                <constraint firstAttribute="bottom" secondItem="Kn3-kN-kVG" secondAttribute="bottom" constant="10" id="efx-bb-PSv"/>
+                <constraint firstAttribute="bottom" secondItem="eis-fq-DaO" secondAttribute="bottom" id="kaw-Fu-cPK"/>
+                <constraint firstItem="tJD-Ec-OU5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="mTj-rw-5Av"/>
+                <constraint firstItem="cf5-Rq-SJK" firstAttribute="leading" secondItem="Kn3-kN-kVG" secondAttribute="trailing" constant="8" symbolic="YES" id="qBg-TY-4NW"/>
+                <constraint firstAttribute="trailing" secondItem="tJD-Ec-OU5" secondAttribute="trailing" id="rWe-ae-27e"/>
+                <constraint firstItem="Kn3-kN-kVG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="rt6-NU-Jha"/>
+                <constraint firstItem="eis-fq-DaO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tlr-gy-iev"/>
+                <constraint firstItem="kvf-gJ-D42" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" id="uBG-DQ-Hhx"/>
+                <constraint firstAttribute="top" secondItem="eis-fq-DaO" secondAttribute="top" id="wBG-yw-954"/>
+                <constraint firstItem="kvf-gJ-D42" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="zRm-YV-GP1"/>
+            </constraints>
+            <size key="customSize" width="381" height="44"/>
+            <connections>
+                <outlet property="accessoryView" destination="cf5-Rq-SJK" id="miX-cx-3dh"/>
+                <outlet property="highlightView" destination="eis-fq-DaO" id="OeO-O4-TWh"/>
+                <outlet property="imageView" destination="kvf-gJ-D42" id="tzK-cb-zA0"/>
+                <outlet property="textLabel" destination="Kn3-kN-kVG" id="iHj-nC-pt2"/>
+            </connections>
+            <point key="canvasLocation" x="-1439" y="-98"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="separatorColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.15000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="RatingCollectionViewCell" customModule="Sonix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8i-eN-Vne">
+                        <rect key="frame" x="16" y="7.9999999999999982" width="98" height="25.333333333333329"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        <color key="textColor" name="labelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYk-we-yp7" customClass="FloatRatingView" customModule="Sonix" customModuleProvider="target">
+                        <rect key="frame" x="16" y="41.333333333333336" width="98" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="labelColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="floatRatings" value="YES"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="Rating Star Empty"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="Rating Star Full"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="minImageSize">
+                                <size key="value" width="14" height="14"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1r-xB-7Ky">
+                        <rect key="frame" x="16" y="49.333333333333336" width="98" height="102.66666666666666"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" name="secondaryLabelColor"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textContainer.lineFragmentPadding">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="rect" keyPath="textContainerInset">
+                                <rect key="value" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="q1r-xB-7Ky" firstAttribute="trailing" secondItem="eYk-we-yp7" secondAttribute="trailing" id="2Ca-Ms-B6q"/>
+                <constraint firstItem="q1r-xB-7Ky" firstAttribute="leading" secondItem="eYk-we-yp7" secondAttribute="leading" id="HaT-6x-ZQo"/>
+                <constraint firstItem="q1r-xB-7Ky" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eYk-we-yp7" secondAttribute="bottom" constant="8" symbolic="YES" id="IA7-gB-sFZ"/>
+                <constraint firstItem="eYk-we-yp7" firstAttribute="leading" secondItem="t8i-eN-Vne" secondAttribute="leading" id="OLy-Cn-3uB"/>
+                <constraint firstItem="t8i-eN-Vne" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="QWp-Xo-Gx6">
+                    <variation key="widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstItem="eYk-we-yp7" firstAttribute="top" secondItem="t8i-eN-Vne" secondAttribute="bottom" constant="8" symbolic="YES" id="TIe-de-ZzE"/>
+                <constraint firstAttribute="bottom" secondItem="q1r-xB-7Ky" secondAttribute="bottom" constant="16" id="cRU-RA-MOe">
+                    <variation key="widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstAttribute="trailingMargin" secondItem="t8i-eN-Vne" secondAttribute="trailing" id="cs8-Vj-7y6"/>
+                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="eYk-we-yp7" secondAttribute="trailing" id="eUR-Mx-QRM"/>
+                <constraint firstItem="t8i-eN-Vne" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="rjB-L5-FHW"/>
+            </constraints>
+            <size key="customSize" width="365" height="206"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="detailTextView" destination="q1r-xB-7Ky" id="H4v-80-ucC"/>
+                <outlet property="ratingView" destination="eYk-we-yp7" id="imP-5i-qce"/>
+                <outlet property="textLabel" destination="t8i-eN-Vne" id="5Qe-WK-sIN"/>
+            </connections>
+            <point key="canvasLocation" x="191.30434782608697" y="139.4021739130435"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Rating Star Empty" width="27" height="27"/>
+        <image name="Rating Star Full" width="27" height="27"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryLabelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

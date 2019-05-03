@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "2Id-4m-S1w"; */
+"2Id-4m-S1w.text" = "Version";
+
+/* Class = "UIButton"; normalTitle = "I'm feeling lucky"; ObjectID = "2cW-xT-Ouu"; */
+"2cW-xT-Ouu.normalTitle" = "I'm feeling lucky";
+
+/* Class = "UILabel"; text = "Preferred quality"; ObjectID = "6Vn-wD-brn"; */
+"6Vn-wD-brn.text" = "Preferred quality";
+
+/* Class = "UILabel"; text = "Preferred subtitle language"; ObjectID = "7FY-en-KZU"; */
+"7FY-en-KZU.text" = "Preferred subtitle language";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "CMc-Ul-Ngt"; */
+"CMc-Ul-Ngt.title" = "Home";
+
+/* Class = "UILabel"; text = "Browse"; ObjectID = "Ho7-CR-VL0"; */
+"Ho7-CR-VL0.text" = "Browse";
+
+/* Class = "UITabBarItem"; title = "Browse"; ObjectID = "Os7-WB-DFU"; */
+"Os7-WB-DFU.title" = "Browse";
+
+/* Class = "UITableViewSection"; headerTitle = "ABOUT"; ObjectID = "Pob-0a-kv7"; */
+"Pob-0a-kv7.headerTitle" = "ABOUT";
+
+/* Class = "UINavigationItem"; title = "Search"; ObjectID = "VkO-5d-L1b"; */
+"VkO-5d-L1b.title" = "Search";
+
+/* Class = "UILabel"; text = "Sign Out"; ObjectID = "ca8-XS-2lY"; */
+"ca8-XS-2lY.text" = "Sign Out";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "dpk-5x-xXP"; */
+"dpk-5x-xXP.text" = "Home";
+
+/* Class = "UITableViewSection"; footerTitle = "If set to ‘Yes’, this will delete the downloaded item from Put.io when the player is closed. If set to ‘No’, the item will remain on the server until manually cleared."; ObjectID = "iXz-Hj-TZh"; */
+"iXz-Hj-TZh.footerTitle" = "If set to ‘Yes’, this will delete the downloaded item from Put.io when the player is closed. If set to ‘No’, the item will remain on the server until manually cleared.";
+
+/* Class = "UITableViewSection"; headerTitle = "GENERAL"; ObjectID = "iXz-Hj-TZh"; */
+"iXz-Hj-TZh.headerTitle" = "GENERAL";
+
+/* Class = "UILabel"; text = "Clear cache upon exiting"; ObjectID = "k1e-x3-dbc"; */
+"k1e-x3-dbc.text" = "Clear cache upon exiting";
+
+/* Class = "UILabel"; text = "Check for updates"; ObjectID = "nEf-0s-lhA"; */
+"nEf-0s-lhA.text" = "Check for updates";
+
+/* Class = "UILabel"; text = "Stream on cellular"; ObjectID = "rFi-Ob-mSx"; */
+"rFi-Ob-mSx.text" = "Stream on cellular";
+
+/* Class = "UINavigationItem"; title = "Account"; ObjectID = "ruV-CM-n0C"; */
+"ruV-CM-n0C.title" = "Account";
+
+/* Class = "UILabel"; text = "Clear cache upon exiting"; ObjectID = "xEa-PZ-ImF"; */
+"xEa-PZ-ImF.text" = "Preferred appearance";
